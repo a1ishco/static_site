@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.main_page {
+  margin-top: 2.5rem;
+  .line {
+    margin-top: 2.5rem;
+    width: 30%;
+    height: 0.3rem;
+    background-color: #fff;
+  }
+  .main_text {
+    cursor: default;
+    color: #fff;
+    #name {
+      font-size: 50px;
+    }
+    .aos_text {
+      height: 20px;
+    }
+
+    #specification {
+      font-size: 15px;
+      font-family: "Lucida Console", Monaco, monospace !important;
+    }
+  }
+}
+
+@media only screen and (max-width: $md-width) {
+  .aos_text {
+    text-align: center;
+  }
+}

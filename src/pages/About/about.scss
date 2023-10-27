@@ -1,0 +1,127 @@
+@import "../../styles/variables";
+
+.about_row {
+  margin-top: 2.5rem;
+  .line {
+    width: 30%;
+    height: 0.3rem;
+    background-color: #fff;
+  }
+  .about_me {
+    color: #fff;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.3);
+    #about_text_1 {
+      margin-bottom: 10px;
+    }
+    #name {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  .about_image {
+    text-align: center;
+    img {
+      border-radius: 50%;
+      width: 50%;
+    }
+  }
+  .about_skills {
+    color: #fff;
+    margin-top: -10px;
+    h1 {
+      margin-bottom: 0;
+    }
+    .aos_flex {
+      display: flex;
+      justify-content: center !important;
+      svg{
+        height:50px;
+        width: 120px;
+      }
+    }
+    .aos_about {
+      overflow: hidden;
+    }
+    #about_text_2 {
+      padding-bottom: 1rem;
+      margin-top: 0px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .about_contact {
+    color: #fff;
+  }
+  .about-experience{
+    z-index: 1;
+    .experience_header{
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .certificate_text{
+    color: #fff;
+    text-align: center;
+  }
+
+  .blur-on-scroll {
+    transition: filter 0.5s;
+  }
+  
+  .blur-on-scroll.blurred {
+    filter: blur(50px);
+  }
+  .exp_wrapper {
+    color: #fff;
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  .exp_timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+  } 
+  .exp_timeline li {
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .exp_timeline .panel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 3px 12px #2d2e2e,
+    -3px -3px 12px #3d3d3d;
+  }
+  .exp_timeline p {
+    cursor: default;
+    padding: 0 20px 10px 20px;
+  }
+  .exp_timeline summary {
+    display:block;
+    cursor: pointer;
+    padding:20px;
+    margin-bottom: 0px;
+    transition: all 1s cubic-bezier(0.2,1,0.3,1);
+    font-weight: 600;
+  }
+  .exp_timeline .panel[open] summary {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 12px $primary-color
+  }
+
+}
+
+@media only screen and (min-width: $md-width) {
+  .about-column {
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    height: 70vh;
+    overflow-y: hidden;
+  }
+}

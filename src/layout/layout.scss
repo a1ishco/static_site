@@ -1,0 +1,41 @@
+.layout {
+  padding-inline: 2rem;
+  background-color: transparent !important;
+  .header {
+    padding: 0.5rem;
+    width: 100%;
+    color: #fff !important;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+    #header_logo {
+      width: 50px;
+      height: 50px;
+    }
+    .ant-menu{
+      border: 0px;
+    }
+    .layout_menu {
+      background-color: transparent;
+      color: #fff;
+      
+      .ant-menu-light {
+        background-color: transparent !important;
+      }
+      .ant-menu-item:hover,
+      .ant-menu-submenu {
+        border-radius: 0;
+        background-color: transparent;
+        color: gray;
+      }
+    }
+  }
+  .sider {
+    background-color: transparent;
+  }
+  .content_layout {
+    background-color: transparent !important;
+  }
+  .content {
+    background-color: transparent !important;
+  }
+}
