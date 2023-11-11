@@ -48,7 +48,7 @@ const MainPage = () => {
             </div>
             <Row>
               <Col xs={24}>
-                <Slider/>
+                {/* <Slider/> */}
               </Col>
             </Row>
           </Col>

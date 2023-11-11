@@ -35,8 +35,8 @@
     .aos_flex {
       display: flex;
       justify-content: center !important;
-      svg{
-        height:50px;
+      svg {
+        height: 50px;
         width: 120px;
       }
     }
@@ -52,14 +52,14 @@
   .about_contact {
     color: #fff;
   }
-  .about-experience{
+  .about-experience {
     z-index: 1;
-    .experience_header{
+    .experience_header {
       color: #fff;
       text-align: center;
     }
   }
-  .certificate_text{
+  .certificate_text {
     color: #fff;
     text-align: center;
   }
@@ -67,53 +67,76 @@
   .blur-on-scroll {
     transition: filter 0.5s;
   }
-  
+
   .blur-on-scroll.blurred {
     filter: blur(50px);
   }
   .exp_wrapper {
     color: #fff;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
-  .exp_timeline {
+  .exp_timeline , .certificate_timeline{
+    text-align: center;
     list-style: none;
-    padding: 20px 0 20px;
+    padding: 20px 0 0px;
     width: 100%;
     justify-content: space-around;
-    display: flex;
-  } 
-  .exp_timeline li {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 0px;
+  }
+  .exp_timeline{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  .certificate_timeline{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  }
+  .exp_timeline li , .certificate_timeline li{
     margin-bottom: 50px;
     position: relative;
   }
-  .exp_timeline .panel {
+  .exp_timeline .panel , .certificate_timeline .panel{
     width: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 3px 3px 12px #2d2e2e,
-    -3px -3px 12px #3d3d3d;
+    box-shadow: 3px 3px 12px #2d2e2e, -3px -3px 12px #3d3d3d;
+    img {
+      padding: 0.5rem;
+      width: 100%;
+    }
   }
-  .exp_timeline p {
+  .exp_timeline p , .certificate_timeline p{
     cursor: default;
     padding: 0 20px 10px 20px;
   }
-  .exp_timeline summary {
-    display:block;
+  .exp_timeline summary , .certificate_timeline summary{
+    display: block;
     cursor: pointer;
-    padding:20px;
+    padding: 20px;
     margin-bottom: 0px;
-    transition: all 1s cubic-bezier(0.2,1,0.3,1);
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
     font-weight: 600;
   }
   .exp_timeline .panel[open] summary {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 3px 3px 12px $primary-color
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 12px $primary-color;
   }
+  .certificate_timeline .panel[open] summary {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 12px $primary-color;
+  }
+}
 
+.aos_about,
+.aos_flex {
+  overflow: hidden !important;
 }
 
 @media only screen and (min-width: $md-width) {

@@ -1,0 +1,30 @@
+.header_col {
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+}
+.portfolio_col1,
+.portfolio_col2 {
+  padding: 1rem;
+  .card{
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    margin: 1rem;
+    .ant-card-head-title{
+      color: #fff;
+    }
+    .ant-card-body{
+      padding: 0;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.components, .projects{
+    height: 400px !important;
+    overflow: scroll;
+    overflow-x: hidden;
+}

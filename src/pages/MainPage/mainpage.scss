@@ -24,6 +24,9 @@
     }
   }
 }
+.sider_div{
+  overflow: hidden;
+}
 
 @media only screen and (max-width: $md-width) {
   .aos_text {

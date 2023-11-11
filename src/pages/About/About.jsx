@@ -137,10 +137,10 @@ const About = () => {
             <ul className="exp_timeline">
               <li>
                 <details className="panel">
-                  <summary>2023 - TechnoLink</summary>
+                  <summary>2023 - Qmeter LLC</summary>
                   <p>
-                    Front-End Development experience - QMeter - 3 month
-                    internship program
+                    Front-End Development experience - 3 month
+                    internship program.<br/> Qmatic , Qmeter projects
                   </p>
                 </details>
               </li>
@@ -155,17 +155,57 @@ const About = () => {
               </li>
               <li>
                 <details className="panel">
-                  <summary>2022 - Bank Respublika ASC</summary>
+                  <summary>2022 - Bank Respublika</summary>
                   <p>
                     Front-End Development experience - `Neo-Summer School` -
                     Summer internship program (IT Lab).
                   </p>
                 </details>
               </li>
+            </ul>
+          </div>
+        </Col>
+        <Col xs={24} md={24} className="about-experience">
+          <h1 className="experience_header">Certificates</h1>
+          <hr />
+          <div className="exp_wrapper">
+            <ul className="certificate_timeline">
               <li>
                 <details className="panel">
-                  <summary>2022 - Rabita Bank ASC</summary>
-                  <p>Back-End Development experience - Internship program</p>
+                  <summary>2023 - ICPC Azerbaijan Qualification</summary>
+                  <p>
+                  Azerbaijan Qualification III place
+                  </p>
+                  <img src={assets.icpc}></img>
+                </details>
+              </li>
+              <li>
+                <details className="panel">
+                  <summary>2022 - SAF STEAM</summary>
+                  <p>
+                    Hackathon University II place
+                  </p>
+                  <img src={assets.saf}></img>
+                </details>
+              </li>
+              <li>
+                <details className="panel">
+                  <summary>2022 - Bank Respublika</summary>
+                  <p>
+                    `Neo-Summer School` -
+                    Summer internship program.
+                  </p>
+                  <img src={assets.bankR}></img>
+                </details>
+              </li>
+              <li>
+                <details className="panel">
+                  <summary>2021 - British Centre</summary>
+                  <p>
+                    `Intermediate` -
+                    English.
+                  </p>
+                  <img src={assets.brtsh}></img>
                 </details>
               </li>
             </ul>

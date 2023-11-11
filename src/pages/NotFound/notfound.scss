@@ -1,0 +1,89 @@
+.not_found {
+    margin-top: 5rem;
+    position: relative;
+    text-align: center;
+    color: white;
+  
+    .box404 {
+      justify-content: center;
+      display: flex;
+      position: relative;
+  
+      h1#text404 {
+        font-size: 6rem;
+        margin: 0;
+        animation: error 1.5s infinite;
+      }
+  
+      svg {
+        margin-right: -250px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        animation: error 1.5s infinite, vibrate 0.5s infinite; /* Add the vibrate animation */
+      }
+    }
+  
+    h3 {
+      animation: fadeIn 1s ease-in;
+      margin: 10px 0;
+    }
+  
+    p {
+      animation: fadeIn 1s ease-in;
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    @keyframes error {
+      0% {
+        opacity: 0.8;
+      }
+      20% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 0.5;
+      }
+      60% {
+        opacity: 0.1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.8;
+      }
+    }
+  
+    @keyframes vibrate {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(2px, -2px);
+      }
+      40% {
+        transform: translate(-2px, 2px);
+      }
+      60% {
+        transform: translate(2px, -2px);
+      }
+      80% {
+        transform: translate(-2px, 2px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  }
+  

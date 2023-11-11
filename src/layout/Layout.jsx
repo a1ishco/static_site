@@ -23,6 +23,12 @@ const Layouts = () => {
       icon: <AppstoreAddOutlined />,
       label: "Portfolio",
       link: "/portfolio",
+      subMenu: [
+        { key: "3.1", label: "Port Login", link: "/portfolio/component/login" },
+        { key: "3.2", label: "Port Contact", link: "/portfolio/component/contact" },
+        { key: "3.3", label: "Port OTP", link: "/portfolio/component/otp" },
+
+      ],
     },
     {
       key: "4",
@@ -31,9 +37,17 @@ const Layouts = () => {
       link: "/contact",
     },
   ];
+  
 
   const location = useLocation();
-  const selectedKey = menuItems.find((item) => item.link === location.pathname)?.key || "1";
+  const selectedKey = menuItems.find((item) => {
+    if (item.link === location.pathname) {
+      return true;
+    } else if (item.subMenu) {
+      return item.subMenu.some((subItem) => subItem.link === location.pathname);
+    }
+    return false;
+  })?.key || "1";
   useEffect(() => {
     AOS.init();
     AOS.refresh();
