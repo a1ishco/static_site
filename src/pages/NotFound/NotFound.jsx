@@ -1,32 +1,39 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./notfound.scss";
-
+import { useNavigate } from "react-router-dom";
+import {assets} from "../../assets"
 const NotFound = () => {
-  const [dots, setDots] = useState(".");
+  const navigate = useNavigate();
+  const [seconds, setSeconds] = useState(5);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setDots((prevDots) => {
-        return prevDots === "..." ? "." : prevDots + ".";
-      });
-    }, 600);
+    const redirectTimeout = setTimeout(() => {
+      navigate('/');
+    }, seconds * 1000);
+
+    const countdownInterval = setInterval(() => {
+      setSeconds((prevSeconds) => prevSeconds - 1);
+    }, 1000);
 
     return () => {
-      clearInterval(interval);
+      clearTimeout(redirectTimeout);
+      clearInterval(countdownInterval);
     };
-  }, []);
+  }, [navigate, seconds]);
 
   return (
-    <>
-      <div className="not_found">
-        <h1>Oops{dots}</h1>
-        <p>You entered the wrong path.</p>
-        <i>
-          Please go <Link to={"/"}>Home page </Link>
-        </i>
+    <div className="not_found">
+      <div className="box404">
+
+      <h1 id="text404">404</h1>
+      {assets.cable}
       </div>
-    </>
+      <h3>
+        Oops, it looks like the page you were trying to access doesn`t exist or
+        has been moved.
+      </h3>
+      <p>Redirecting Home page in {seconds} seconds</p>
+    </div>
   );
 };
 
