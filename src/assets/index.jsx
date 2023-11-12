@@ -9,6 +9,7 @@ import glassmorph_login from "./images/glassmorph_login.png";
 import moda from "./images/moda.jpg";
 import moda_contact from "./images/moda_contact.png";
 import otp from "./images/otp.png"
+import weather_app from "./images/weather_project.png"
 export const assets = {
   pdfCV,
   aliJPG,
@@ -28,4 +29,5 @@ export const assets = {
   moda,
   moda_contact,
   otp,
+  weather_app,
 };
