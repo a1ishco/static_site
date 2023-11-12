@@ -11,7 +11,15 @@ const Portfolio = () => {
             <h3>Projects</h3>
           </div>
           <div className="projects">
-            <Card className="card"></Card>
+            
+            <Card className="card" title="Weather App (Mini project)"
+             extra={
+              <Link to="https://weather-appreacted.netlify.app/" target="_blank">
+                <Button>Live demo</Button>
+              </Link>
+            }>
+              <img src={assets.weather_app} />
+            </Card>
             <Card className="card"></Card>
             <Card className="card"></Card>
             <Card className="card"></Card>

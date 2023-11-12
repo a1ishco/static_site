@@ -184,7 +184,7 @@
       img {
         position: absolute;
         height: 440px;
-        animation: imageMoveModa 10s infinite;
+        animation: imageMoveModa 10s linear;
       }
       padding: 1rem;
       overflow: hidden;
@@ -350,9 +350,6 @@
 
 @keyframes imageMoveModa {
   0% {
-    left: 0px;
-  }
-  50% {
     left: -350px;
   }
   100% {
