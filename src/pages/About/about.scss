@@ -77,7 +77,7 @@
     display: flex;
     justify-content: center;
   }
-  .exp_timeline , .certificate_timeline{
+  .exp_timeline , .certificate_timeline, .education_timeline{
     text-align: center;
     list-style: none;
     padding: 20px 0 0px;
@@ -92,13 +92,15 @@
   }
   .certificate_timeline{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
   }
-  .exp_timeline li , .certificate_timeline li{
+  .education_timeline{
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+  .exp_timeline li , .certificate_timeline li, .education_timeline li{
     margin-bottom: 50px;
     position: relative;
   }
-  .exp_timeline .panel , .certificate_timeline .panel{
+  .exp_timeline .panel , .certificate_timeline .panel , .education_timeline .panel{
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -108,11 +110,11 @@
       width: 100%;
     }
   }
-  .exp_timeline p , .certificate_timeline p{
+  .exp_timeline p , .certificate_timeline p , .education_timeline p{
     cursor: default;
     padding: 0 20px 10px 20px;
   }
-  .exp_timeline summary , .certificate_timeline summary{
+  .exp_timeline summary , .certificate_timeline summary , .education_timeline summary{
     display: block;
     cursor: pointer;
     padding: 20px;

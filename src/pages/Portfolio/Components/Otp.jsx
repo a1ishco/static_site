@@ -5,7 +5,7 @@ import { SafetyOutlined } from "@ant-design/icons";
 
 const Otp = () => {
   const [otp, setOtp] = useState(["", "", "", ""]);
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(120);
   const inputRefs = useRef([]);
   const phoneNumber = "+1234567890123";
 
@@ -35,7 +35,7 @@ const Otp = () => {
 
   const handleResendClick = () => {
     if (timer === 0) {
-      setTimer(10);
+      setTimer(120);
       setOtp(["", "", "", ""]);
       inputRefs.current[0].focus();
       message.success("Message sent successfully");

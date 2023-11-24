@@ -3,6 +3,7 @@ import "./about.scss";
 import { assets } from "../../assets";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Skeleton } from "antd";
 
 const About = () => {
   useEffect(() => {
@@ -58,6 +59,28 @@ const About = () => {
             <Col xs={24} className="about_skills">
               <div data-aos="fade-left" className="aos_about">
                 <h1>Skills</h1>
+                <div data-aos="fade-left" className="aos_flex">
+                  <p id="about_text_2">
+                    As 22 year old developer I am eager to learn the major
+                    innovations required by the modern world. Therefore, I am
+                    constantly learning and developing software. I also have
+                    skills in teamwork. The programming language I use and
+                    experience is JavaScript and its framework
+                  </p>
+                </div>
+                <div data-aos="fade-left" className="aos_flex">
+                  <p id="about_text_2">
+                    Junior Front-End-DeveIoper, I like to constantly develop and
+                    learn. New knowledge and experiences are my main motivation,
+                    I am active, social, hardworking and responsible. I can use
+                    these qualities to contribute effectively to a dynamic team,
+                    I consistently meet performance expectations while being
+                    dedicated and hardworking,
+                  </p>
+                </div>
+              </div>
+              <div data-aos="fade-left" className="aos_about">
+                <h1>Programming skills</h1>
                 <div data-aos="fade-left" className="aos_flex">
                   <p id="about_text_2">
                     With a strong foundation in <b>HTML</b> and <b>CSS</b>, I
@@ -129,7 +152,42 @@ const About = () => {
             </Col>
           </Row>
         </Col>
-
+        <Col xs={24} md={24} className="about-experience">
+          <h1 className="experience_header">Education</h1>
+          <hr />
+          <div className="exp_wrapper">
+            <ul className="education_timeline">
+              <li>
+                <details className="panel">
+                  <summary>
+                    Bachleor - Azerbaijan State University of Economics
+                  </summary>
+                  <p>
+                    Study date: 2018-2022
+                    <br />
+                    Specialization: Information technologies
+                    <br />
+                    Overall average achievement indicator: 93.03
+                  </p>
+                </details>
+              </li>
+              <li>
+                <details className="panel">
+                  <summary>
+                    Master - Azerbaijan State University of Economics
+                  </summary>
+                  <p>
+                    Study date: 2022-2024
+                    <br />
+                    Specialization: Information protection and security
+                    <br />
+                    Overall average achievement indicator: (Not finished)
+                  </p>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </Col>
         <Col xs={24} md={24} className="about-experience">
           <h1 className="experience_header">Experience</h1>
           <hr />
@@ -139,8 +197,9 @@ const About = () => {
                 <details className="panel">
                   <summary>2023 - Qmeter LLC</summary>
                   <p>
-                    Front-End Development experience - 3 month
-                    internship program.<br/> Qmatic , Qmeter projects
+                    Front-End Development experience - 3 month internship
+                    program.
+                    <br /> Qmatic , Qmeter projects
                   </p>
                 </details>
               </li>
@@ -173,38 +232,28 @@ const About = () => {
               <li>
                 <details className="panel">
                   <summary>2023 - ICPC Azerbaijan Qualification</summary>
-                  <p>
-                  Azerbaijan Qualification III place
-                  </p>
+                  <p>Azerbaijan Qualification III place</p>
                   <img src={assets.icpc}></img>
                 </details>
               </li>
               <li>
                 <details className="panel">
                   <summary>2022 - SAF STEAM</summary>
-                  <p>
-                    Hackathon University II place
-                  </p>
+                  <p>Hackathon University II place</p>
                   <img src={assets.saf}></img>
                 </details>
               </li>
               <li>
                 <details className="panel">
                   <summary>2022 - Bank Respublika</summary>
-                  <p>
-                    `Neo-Summer School` -
-                    Summer internship program.
-                  </p>
+                  <p>`Neo-Summer School` - Summer internship program.</p>
                   <img src={assets.bankR}></img>
                 </details>
               </li>
               <li>
                 <details className="panel">
                   <summary>2021 - British Centre</summary>
-                  <p>
-                    `Intermediate` -
-                    English.
-                  </p>
+                  <p>`Intermediate` - English.</p>
                   <img src={assets.brtsh}></img>
                 </details>
               </li>

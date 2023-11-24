@@ -2,6 +2,8 @@ import { Button, Card, Col, Row } from "antd";
 import "./portfolio.scss";
 import { Link } from "react-router-dom";
 import { assets } from "../../assets";
+import { Skeleton } from 'antd';
+
 const Portfolio = () => {
   return (
     <>
@@ -20,11 +22,7 @@ const Portfolio = () => {
             }>
               <img src={assets.weather_app} />
             </Card>
-            <Card className="card"></Card>
-            <Card className="card"></Card>
-            <Card className="card"></Card>
-            <Card className="card"></Card>
-            <Card className="card"></Card>
+           <Skeleton/>
           </div>
         </Col>
         <Col xs={24} md={12} className="portfolio_col2">

@@ -105,7 +105,7 @@ const Contact = () => {
             </div>
             <div className="social">
               <a
-                href="https://www.facebook.com/your_username"
+                href="https://www.facebook.com/profile.php?id=100009293026696"
                 target="_blank"
                 rel="noopener noreferrer"
               >
