@@ -77,7 +77,9 @@
     display: flex;
     justify-content: center;
   }
-  .exp_timeline , .certificate_timeline, .education_timeline{
+  .exp_timeline,
+  .certificate_timeline,
+  .education_timeline {
     text-align: center;
     list-style: none;
     padding: 20px 0 0px;
@@ -87,20 +89,39 @@
     gap: 10px;
     margin-bottom: 0px;
   }
-  .exp_timeline{
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  .exp_timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
-  .certificate_timeline{
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  .certificate_timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
-  .education_timeline{
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  .education_timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
-  .exp_timeline li , .certificate_timeline li, .education_timeline li{
+  .exp_timeline li,
+  .certificate_timeline li,
+  .education_timeline li {
     margin-bottom: 50px;
     position: relative;
   }
-  .exp_timeline .panel , .certificate_timeline .panel , .education_timeline .panel{
+  .exp_timeline .panel,
+  .certificate_timeline .panel,
+  .education_timeline .panel {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -110,11 +131,15 @@
       width: 100%;
     }
   }
-  .exp_timeline p , .certificate_timeline p , .education_timeline p{
+  .exp_timeline p,
+  .certificate_timeline p,
+  .education_timeline p {
     cursor: default;
     padding: 0 20px 10px 20px;
   }
-  .exp_timeline summary , .certificate_timeline summary , .education_timeline summary{
+  .exp_timeline summary,
+  .certificate_timeline summary,
+  .education_timeline summary {
     display: block;
     cursor: pointer;
     padding: 20px;
@@ -129,6 +154,12 @@
     box-shadow: 3px 3px 12px $primary-color;
   }
   .certificate_timeline .panel[open] summary {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 12px $primary-color;
+  }
+  .education_timeline .panel[open] summary {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);

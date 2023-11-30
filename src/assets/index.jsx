@@ -10,6 +10,12 @@ import moda from "./images/moda.jpg";
 import moda_contact from "./images/moda_contact.png";
 import otp from "./images/otp.png"
 import weather_app from "./images/weather_project.png"
+import crm_1 from "./images/crm-1.png";
+import crm_2 from "./images/crm-2.png";
+import crm_3 from "./images/crm-3.png";
+import crm_4 from "./images/crm-4.png";
+import crm_5 from "./images/crm-5.png";
+
 export const assets = {
   pdfCV,
   aliJPG,
@@ -30,4 +36,9 @@ export const assets = {
   moda_contact,
   otp,
   weather_app,
+  crm_1,
+  crm_2,
+  crm_3,
+  crm_4,
+  crm_5
 };

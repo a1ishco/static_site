@@ -22,6 +22,14 @@ const Portfolio = () => {
             }>
               <img src={assets.weather_app} />
             </Card>
+            <Card className="card" title="Child Entertaiment CRM App (Mini project)"
+             extra={
+                <Link to="project/crm" target="_blank">
+                <Button>Live demo</Button>
+              </Link>
+            }>
+              <img src={assets.crm_2} />
+            </Card>
            <Skeleton/>
           </div>
         </Col>

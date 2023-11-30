@@ -1,4 +1,5 @@
 .layout {
+  overflow: hidden !important;
   padding-inline: 2rem;
   background-color: transparent !important;
   .header {
@@ -15,6 +16,8 @@
       border: 0px;
     }
     .layout_menu {
+      display: flex;
+      justify-content: center;
       background-color: transparent;
       color: #fff;
       

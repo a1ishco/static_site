@@ -160,7 +160,9 @@ const About = () => {
               <li>
                 <details className="panel">
                   <summary>
-                    Bachleor - Azerbaijan State University of Economics
+                    Bachleor
+                    <br />
+                    Azerbaijan State University of Economics
                   </summary>
                   <p>
                     Study date: 2018-2022
@@ -174,7 +176,8 @@ const About = () => {
               <li>
                 <details className="panel">
                   <summary>
-                    Master - Azerbaijan State University of Economics
+                    Master <br />
+                    Azerbaijan State University of Economics
                   </summary>
                   <p>
                     Study date: 2022-2024

@@ -57,10 +57,10 @@ const Layouts = () => {
       <Layout className="layout">
         <Header className="header">
           <Row>
-            <Col xs={12}>
+            <Col md={6} xs={0}>
               <Logo />
             </Col>
-            <Col xs={12}>
+            <Col md={12} xs={24}>
               <Row className="header_row">
                 <Col xs={24}>
                   <Menu
