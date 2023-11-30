@@ -349,6 +349,29 @@
   }
 }
 
+.kid_crm {
+  margin-top: 35px;
+  position: relative;
+  .ant-tooltip {
+    max-width: "80%";
+    margin-top: 200px;
+  }
+  .slick-dots {
+    margin-top: -25px !important;
+  }
+  .tooltip_btn {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 13px;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+
 @keyframes imageMoveModa {
   0% {
     left: -350px;

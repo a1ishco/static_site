@@ -27,6 +27,7 @@ const Layouts = () => {
         { key: "3.1", label: "Port Login", link: "/portfolio/component/login" },
         { key: "3.2", label: "Port Contact", link: "/portfolio/component/contact" },
         { key: "3.3", label: "Port OTP", link: "/portfolio/component/otp" },
+        { key: "3.4", label: "Port CRM", link: "/portfolio/project/crm" },
 
       ],
     },
