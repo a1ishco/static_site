@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 const About = () => {
+  const dateCalculation = (date) => {
+    const currentDate = new Date();
+    const startDate = new Date(date);
+    const diffTime = Math.abs(currentDate - startDate);
+    const diffYears = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 365));
+    return diffYears;
+  };
+
   useEffect(() => {
     const aboutColumn = document.querySelector(".about-column");
     window.addEventListener("scroll", () => {
@@ -139,8 +147,13 @@ const About = () => {
                 <details className="panel">
                   <summary>2023 - Qmeter LLC</summary>
                   <p>
-                    Front-End Development experience - 3 month
-                    internship program.<br/> Qmatic , Qmeter projects
+                    Front-End Development experience - 3 month internship
+                    program.
+                    <br />
+                    Front-End Development <b>work</b> experience -
+                    {` ${dateCalculation("12.01.2023")} years`}
+                    <br />
+                    <br /> <Link to="https://qmeter.net/" target="_blank" style={{textDecoration:"none", color:"#fff"}}>Qmatic , Qmeter projects</Link>
                   </p>
                 </details>
               </li>
@@ -172,40 +185,33 @@ const About = () => {
             <ul className="certificate_timeline">
               <li>
                 <details className="panel">
+                  <summary>2024 - IELTS (GENERAL TRAINING ) </summary>
+                  <p>CEFR Level B2 - Overall 6.</p>
+                  <img
+                    style={{ objectFit: "contain", height: 400 }}
+                    src={assets.ielts}
+                  ></img>
+                </details>
+              </li>
+              <li>
+                <details className="panel">
                   <summary>2023 - ICPC Azerbaijan Qualification</summary>
-                  <p>
-                  Azerbaijan Qualification III place
-                  </p>
+                  <p>Azerbaijan Qualification III place</p>
                   <img src={assets.icpc}></img>
                 </details>
               </li>
               <li>
                 <details className="panel">
                   <summary>2022 - SAF STEAM</summary>
-                  <p>
-                    Hackathon University II place
-                  </p>
+                  <p>Hackathon University II place</p>
                   <img src={assets.saf}></img>
                 </details>
               </li>
               <li>
                 <details className="panel">
                   <summary>2022 - Bank Respublika</summary>
-                  <p>
-                    `Neo-Summer School` -
-                    Summer internship program.
-                  </p>
+                  <p>`Neo-Summer School` - Summer internship program.</p>
                   <img src={assets.bankR}></img>
-                </details>
-              </li>
-              <li>
-                <details className="panel">
-                  <summary>2021 - British Centre</summary>
-                  <p>
-                    `Intermediate` -
-                    English.
-                  </p>
-                  <img src={assets.brtsh}></img>
                 </details>
               </li>
             </ul>

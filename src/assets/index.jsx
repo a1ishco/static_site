@@ -10,7 +10,9 @@ import moda from "./images/moda.jpg";
 import moda_contact from "./images/moda_contact.png";
 import otp from "./images/otp.png"
 import weather_app from "./images/weather_project.png"
+import ielts from "./images/ielts.jpeg"
 export const assets = {
+  ielts,
   pdfCV,
   aliJPG,
   p1,
