@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Col, Row } from "antd";
 import SiderMain from "../components/SiderMain";
 import "./mainpage.scss";
-import Slider from "../components/Slider";
 
 const MainPage = () => {
   const text = ["<h1>Front-end developer</h1>", "<p>Web developer</p>"];

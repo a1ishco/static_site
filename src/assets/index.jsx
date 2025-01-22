@@ -10,6 +10,8 @@ import moda from "./images/moda.jpg";
 import moda_contact from "./images/moda_contact.png";
 import otp from "./images/otp.png"
 import weather_app from "./images/weather_project.png"
+import qmeter from "./images/qmeter.png"
+import qmeterApp from "./images/qmeterApp.png"
 import ielts from "./images/ielts.jpeg"
 export const assets = {
   ielts,
@@ -32,4 +34,6 @@ export const assets = {
   moda_contact,
   otp,
   weather_app,
+  qmeter,
+  qmeterApp,
 };

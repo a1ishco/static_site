@@ -31,21 +31,6 @@ const About = () => {
           <Col xs={24} className="about_image">
             <img src={assets.aliJPG} />
           </Col>
-          <Col xs={24} className="about_contact">
-            <div data-aos="fade-up" className="aos_flex">
-              <p id="about_text_3">
-                Whether you`re interested in discussing a project, have a
-                question, or just want to say hello, I`d love to hear from you.
-                Feel free to reach out via my
-                <Link to={"/contact"}> contact page.</Link>
-              </p>
-            </div>
-          </Col>
-          {/* <Col xs={24}>
-            <hr />
-            <h3 className="certificate_text">Certificates</h3>
-
-          </Col> */}
         </Col>
 
         <Col xs={24} md={12} offset={1}>
@@ -153,7 +138,14 @@ const About = () => {
                     Front-End Development <b>work</b> experience -
                     {` ${dateCalculation("12.01.2023")} years`}
                     <br />
-                    <br /> <Link to="https://qmeter.net/" target="_blank" style={{textDecoration:"none", color:"#fff"}}>Qmatic , Qmeter projects</Link>
+                    <br />{" "}
+                    <Link
+                      to="https://qmeter.net/"
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "#fff" }}
+                    >
+                      Qmatic , Qmeter projects
+                    </Link>
                   </p>
                 </details>
               </li>

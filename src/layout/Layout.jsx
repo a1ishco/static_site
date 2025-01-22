@@ -57,12 +57,12 @@ const Layouts = () => {
       <Layout className="layout">
         <Header className="header">
           <Row>
-            <Col xs={12}>
+            <Col xs={0} md={1}>
               <Logo />
             </Col>
-            <Col xs={12}>
+            <Col xs={24} md={23}>
               <Row className="header_row">
-                <Col xs={24}>
+                <Col xs={24} id="header_menu_col">
                   <Menu
                     mode="horizontal"
                     className="layout_menu"

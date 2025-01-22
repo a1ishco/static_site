@@ -1,6 +1,7 @@
 .layout {
   padding-inline: 2rem;
   background-color: transparent !important;
+  height: 100vh;
   .header {
     padding: 0.5rem;
     width: 100%;
@@ -11,13 +12,18 @@
       width: 50px;
       height: 50px;
     }
-    .ant-menu{
+    #header_menu_col > ul {
+      display: flex;
+      justify-content: center;
+      width: 103%;
+    }
+    .ant-menu {
       border: 0px;
     }
     .layout_menu {
       background-color: transparent;
       color: #fff;
-      
+
       .ant-menu-light {
         background-color: transparent !important;
       }
@@ -31,11 +37,21 @@
   }
   .sider {
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .content_layout {
     background-color: transparent !important;
   }
   .content {
     background-color: transparent !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #header_menu_col > ul {
+    display: block !important;
+    width: 107% !important;
   }
 }

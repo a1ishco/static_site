@@ -25,6 +25,34 @@ const Portfolio = () => {
             >
               <img src={assets.weather_app} />
             </Card>
+            <Card
+              className="card"
+              title="Qmeter Omnichannel"
+              extra={
+                <Link
+                  to="https://qmeter.net/"
+                  target="_blank"
+                >
+                  <Button>Live demo</Button>
+                </Link>
+              }
+            >
+              <img src={assets.qmeter} />
+            </Card>
+            <Card
+              className="card"
+              title="Qmeter Omnichannel Platform"
+              extra={
+                <Link
+                  to="https://app.qmeter.net/"
+                  target="_blank"
+                >
+                  <Button>Live demo</Button>
+                </Link>
+              }
+            >
+              <img src={assets.qmeterApp} />
+            </Card>
             {/* <Card className="card"></Card>
             <Card className="card"></Card>
             <Card className="card"></Card>
