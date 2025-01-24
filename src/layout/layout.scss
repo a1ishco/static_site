@@ -43,9 +43,13 @@
   }
   .content_layout {
     background-color: transparent !important;
+    main {
+      margin: auto;
+    }
   }
   .content {
     background-color: transparent !important;
+    height: fit-content;
   }
 }
 
